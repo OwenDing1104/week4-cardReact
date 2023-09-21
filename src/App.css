@@ -13,64 +13,53 @@ body {
   background-color: lightgreen;
   
 }
-.card { 
-  border-style: solid;
-  border-width: 3px;
-  border-color: green;
-  border-radius: 10px;
-  width: 450px;
+.card {
+  max-width: 400px;
+  margin: 12px;
+  background-color: pink;
+  text-align: center;
+  padding:6px ;
+  border-radius: 6px;
 }
-img {
-  margin: 25px;
-  width: 400px;
-  height: auto;
+/*The heading setting in the card*/
+.card h1{
+  font-size: 36px ;
+  color: #CE1141;
 }
-.btn-wrapper {
-  margin: 24px;
+/*The second heading setting in the card*/
+.card h2{
+  font-size: 30px ;
+  color: #CE1141;
 }
-.btn-wrapper button {
+/*The content setting in the card*/
+.card p{
+  font-size: 16px ;
+  color: black;
+  margin-left: 8px ;
+  margin-right: 8px ;
+}
+/*The image setting in the card*/
+.card img {
+  width: 85%;
+  height:auto;
+}
+/*The button setting in the card*/
+.button1 {
+  margin: 24px auto;
+}
+.button1 button {
   font-size: 24px;
-  color: green;
+  color: #CE1141;
   background-color: white;
+  padding: 6px;
 }
-.btn-wrapper button:hover {
+.button1 button:hover, .button1 button:focus {
   color: white;
-  background-color: green;
-}
-.header {
-  font-size: 20px;
-  margin: 25px;
-}
-.paragraph {
-  font-size: 20px;
-  margin: 25px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #CE1141;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 800px){
+  .detailsButton{
+    display: none;
   }
 }
